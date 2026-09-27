@@ -1,0 +1,15 @@
+# 开发与验收
+
+Python 3.10+ 标准库，历史测试需要 Git。无需安装第三方包，没有单独构建产物。在仓库根目录运行：
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 skills/doctrail/scripts/doctrail.py check .
+python3 -m compileall -q skills/doctrail/scripts tests
+```
+
+实施前确定的必要验收：入口轻量并按模式加载；盘点和检索不改文件、不推测动机；历史窗口有界且显示截断；缺失链接、重复 ID、无效状态、缺失前驱和替代环被检出；无 Git 与非法输入如实反馈；派工交接不属于本项目。
+
+初始本地验证：13 项 unittest 通过，覆盖临时 Git 回退历史、字面路径选择、只读盘点、越界路径、决策链与循环、CLI 错误。另行检查本项目文档链接和决策索引，并用开发宿主的 Skill Creator 校验器验证入口。字节码编译仅验证语法，不代表打包构建。
+
+尚未验证：独立 Agent 行为评测、完整真实旧项目整改、宿主自动发现、远端链接、锚点及语义真实性。CI 运行 Python 3.10 测试与文档检查；工作流文件本身不代表 CI 成功。没有实测前不宣称降低 Token 或避免回归的效果。

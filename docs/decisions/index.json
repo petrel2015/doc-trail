@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "D-0001",
+      "path": "docs/decisions/D-0001-scope.md",
+      "status": "accepted",
+      "topics": [
+        "scope",
+        "progressive-disclosure",
+        "history"
+      ],
+      "supersedes": []
+    }
+  ]
+}

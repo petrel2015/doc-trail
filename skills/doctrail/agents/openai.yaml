@@ -1,0 +1,4 @@
+interface:
+  display_name: "DocTrail · 文迹"
+  short_description: "Progressive project docs and decision history"
+  default_prompt: "Use $doctrail to organize this project's documentation and preserve evidence-backed implementation decisions."
