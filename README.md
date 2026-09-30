@@ -2,7 +2,7 @@
 
 English | [简体中文](README.zh.md)
 
-Progressive project documentation and evidence-backed decision history for people and agents.
+An independent, host-neutral skill for progressive project documentation and evidence-backed decision history.
 
 Start with a short README. Follow task-specific links. Learn why an apparently better approach was tried, rejected or reverted before repeating it.
 
@@ -13,7 +13,7 @@ Ask your agent to read [the DocTrail skill](skills/doctrail/SKILL.md), then requ
 - **Initialize / retrofit:** organize existing docs and recover significant history from code and Git.
 - **Maintain:** update affected guides and record important experiments, choices and reversals.
 
-For host installation and example prompts, read [usage](docs/en/usage.md). Helpers require Python 3.10+; Git is needed only for Git metadata/history. No Python packages are required.
+For direct reading, native registration and capability requirements, read [usage](docs/en/usage.md). Claude, ZCode, DSH, Hermes, Codex and other agents are target hosts; native activation is qualified separately. Python/Git are needed only for the corresponding optional helpers, with no third-party Python packages required.
 
 ## Read next
 

@@ -11,6 +11,17 @@
         "history"
       ],
       "supersedes": []
+    },
+    {
+      "id": "D-0002",
+      "path": "docs/decisions/D-0002-host-neutral.md",
+      "status": "accepted",
+      "topics": [
+        "portability",
+        "packaging",
+        "host-integration"
+      ],
+      "supersedes": []
     }
   ]
 }

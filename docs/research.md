@@ -17,3 +17,5 @@ Reviewed 2026-09-27. These are influences, not claimed conformance certification
 | [Diátaxis](https://www.diataxis.fr/start-here/) | Different reader needs for tutorials, how-to, reference and explanation |
 
 DocTrail adds an explicit distinction between considered/tested/deployed alternatives, claim-level evidence and unknown motives, reconsideration conditions and bounded retrofit investigation. It does not copy an entire harness workflow into a documentation skill.
+
+Portability refinement reviewed 2026-09-30: [Agent Skills specification](https://agentskills.io/specification) defines the shared skill layout and progressive resource loading. Individual product loading paths are separate adapter concerns; this reference does not certify any host.

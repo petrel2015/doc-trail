@@ -2,9 +2,26 @@
 
 ## Invocation
 
-The distributable skill folder is `skills/doctrail/`; preserve its references, assets and scripts together. A host with local skill discovery can install this folder using its supported installation mechanism. For Codex, the personal skill location is normally `~/.agents/skills/doctrail/`. Do not overwrite an existing installation without comparing it. See [official skill documentation](https://developers.openai.com/codex/skills/).
+DocTrail is an independent, host-neutral skill. Its core uses the directory layout described by the [Agent Skills specification](https://agentskills.io/specification): `SKILL.md`, references, assets and scripts. Model choice, accounts, tool names and installation locations belong to the host.
 
-Host activation has not been tested here. A portable alternative is to ask an agent to read the repository's skill entry explicitly. Reading skill source is not proof of automatic discovery.
+Choose the entry your environment supports:
+
+1. **Direct reading:** make the complete `skills/doctrail/` directory accessible and ask the agent to read `skills/doctrail/SKILL.md`. Follow only the route relevant to the task. Resolve resource links relative to the file containing them, and `<skill-dir>` relative to this skill's actual directory. This entry works without automatic skill discovery.
+2. **Native registration:** copy or register the complete `skills/doctrail/` directory using the host's configured skill mechanism. Keep its name and internal paths intact. Compare any existing installation before replacing it; confirm the host exposes the entry before claiming activation. DocTrail does not prescribe a universal installation path or invocation syntax.
+
+Claude, ZCode, DSH, Hermes, Codex and other agents are intended hosts when their tools provide the required capabilities. This is a capability-based design, not a claim that each product's native discovery or invocation has been tested. Use ordinary prompts for direct reading; host-specific selectors or commands are optional.
+
+## Required capabilities
+
+| Work | Capability |
+| --- | --- |
+| Read guidance / review supplied material | Read Markdown and follow the relevant local references |
+| Initialize or maintain a repository's docs | Read project files; write only within the authorized documentation scope |
+| Run deterministic helpers | Execute Python 3.10+; Git only for repository metadata/history |
+
+The documentation workflow can run without the helpers. Use the host's equivalent inspection/checking tools or inspect supplied material, and report the actual coverage. If Git, files or command execution are unavailable, leave the corresponding evidence gap explicit.
+
+Product-specific presentation metadata is available separately in [optional adapters](../../adapters/README.md). The core skill does not require it. Native host activation remains unverified.
 
 Example requests:
 

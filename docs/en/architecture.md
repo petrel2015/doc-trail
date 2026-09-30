@@ -9,3 +9,5 @@ Optional decision JSON is the lifecycle authority for automated checks; Markdown
 Task contracts, dispatch, retry, cost accounting and handoff stay with an orchestrator. See [integration boundaries](../../skills/doctrail/references/integration.md). DocTrail is independently usable and carries no AgentRelay dependency.
 
 Before changing these boundaries, read [D-0001](../decisions/D-0001-scope.md). No automatic model evaluation or semantic verification is implemented.
+
+The portable core is `skills/doctrail/`; host tools supply file access and optional command execution. Product UI metadata lives separately in [adapters](../../adapters/README.md). It cannot change core workflow requirements. Before adding a product dependency, read [D-0002](../decisions/D-0002-host-neutral.md).

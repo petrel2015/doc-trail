@@ -1,5 +1,9 @@
 # Integrations and boundaries
 
+## Host tools and skill loading
+
+The core instructions define a workflow and capability requirements, not a specific agent product. Use host-provided file, editing and shell tools when available. Direct reading of the complete skill directory is the baseline; native registration/discovery is a host option and needs its own verification. Preserve project-specific agent entry filenames and governance. Product UI metadata is distributed separately from this directory and is not needed to interpret the core. If required tools or context are missing, report the available scope and gaps rather than inventing execution evidence.
+
 ## OpenSpec or another existing specification system
 
 Reuse current specs, design documents and archived changes as sources. Do not create a second behavioral contract. Link significant historical choices from a topic index; add a focused decision only when the rationale, evaluation or lineage is missing. Archive presence alone is not proof of deployment, runtime success or full preservation of abandoned alternatives. Preserve the project's own approval/governance rules.

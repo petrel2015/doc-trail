@@ -7,6 +7,10 @@ description: Initialize or retrofit project documentation from existing docs, co
 
 Make the project understandable to a new person or agent without requiring the whole documentation tree in context. Preserve why significant choices changed, especially tried-and-reverted alternatives.
 
+## Host capabilities
+
+Use this workflow with any agent that can read the skill and its relevant resources. Repository edits require project-file access and authorized writes; helpers additionally require Python 3.10+ and Git for history. Select equivalent tools supplied by the host rather than assuming tool names, a model, an account, an install path or a special invocation command. Without command execution, perform supported inspection and report the unverified scope. Resolve links relative to their source file and `<skill-dir>` to the actual skill directory. Product-specific UI adapters are optional and do not define the workflow.
+
 ## Choose one entry
 
 - **Initialize / retrofit:** missing, scattered or contradictory project docs. Read [initialization](references/initialize.md); inspect before writing. Existing docs and Git are inputs, not grounds for guessing motives.
